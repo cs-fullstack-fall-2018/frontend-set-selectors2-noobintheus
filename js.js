@@ -1,17 +1,30 @@
-document.querySelector(".example");
-console.log("fun");
-document.querySelector("#first").innerHTML = "Hello World!";
-console.log("times");
-document.getElementsByTagName("name");
-console.log("bleh");
+// Return The First <p> Tag
+var firstpTag = document.getElementById("first");
+console.log(firstpTag);
 
-var matches = document.querySelectorAll("p")
-var x = document.getElementById("myDIV");
-x.querySelector(".example").innerHTML = "Hello World!";
+var pTag = document.getElementsByTagName("p");
+console.log(pTag[0]);
+
+var anotherpTag = document.getElementsByClassName("special");
+console.log(anotherpTag[0]);
 
 
-document.querySelector("h1").style.backgroundColor = "blue";
-document.querySelector("goodbye").style.backgroundColor = "yellow";
+//Print the Special Class
+var getTheSpecialClass = document.querySelectorAll(".special");
+console.log(getTheSpecialClass);
+
+var getTheSpecialClassAgain = document.querySelector(".special");
+console.log(getTheSpecialClassAgain);
+
+
+//Change the color of the h1 statement to blue
+var geth1Element = document.getElementsByTagName("h1");
+geth1Element[0].style.color = "blue";
+
+
+// Change the color of the last p tag to yellow
+var changeTheLastpTag = document.getElementsByTagName("p");
+changeTheLastpTag[3].style.color = "yellow";
 
 /*
 Question 1:
